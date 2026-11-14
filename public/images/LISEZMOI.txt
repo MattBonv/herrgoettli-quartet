@@ -1,0 +1,1 @@
+Déposez ici les photos (jpg/webp), puis renseignez leur chemin dans src/app/data.ts

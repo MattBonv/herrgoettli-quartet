@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --gentian:#2a2d8c; --night:#171a5e; --edelweiss:#f4f2ec; --rose:#ff9dba;
+  --line:rgba(244,242,236,.28);
+  --display:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Instrument Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--gentian);color:var(--edelweiss);font:400 1.0625rem/1.6 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.95;margin:0;letter-spacing:-.02em}
+h1{font-stretch:75%;font-size:clamp(3.6rem,14vw,12rem);text-wrap:balance}
+h2{font-stretch:80%;font-size:clamp(2.4rem,7vw,5rem);margin-bottom:2rem}
+p{max-width:62ch}
+.wrap{padding:0 clamp(1rem,4vw,3rem)}
+.page{padding:clamp(2rem,6vw,5rem) clamp(1rem,4vw,3rem) 5rem}
+
+/* barre */
+.bar{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;align-items:baseline;padding:1.25rem clamp(1rem,4vw,3rem);border-bottom:1px solid var(--line)}
+.brand{font:800 1.25rem var(--display);font-stretch:80%;text-decoration:none}
+.bar nav{display:flex;gap:1.5rem}
+.bar nav a{text-decoration:none;padding:.25rem 0;border-bottom:2px solid transparent}
+.bar nav a:hover,.bar nav a.on{border-color:var(--rose)}
+.foot{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;padding:2rem clamp(1rem,4vw,3rem);border-top:1px solid var(--line);font-size:.95rem}
+
+/* boutons */
+.btn{display:inline-block;background:var(--rose);color:var(--night);font:600 1rem var(--body);padding:.85rem 1.5rem;border:0;border-radius:999px;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--edelweiss)}
+.btn.ghost{background:transparent;color:var(--edelweiss);box-shadow:inset 0 0 0 2px var(--edelweiss)}
+.btn.ghost:hover{background:var(--edelweiss);color:var(--night)}
+
+/* placeholders photo */
+.ph{width:100%;height:100%;min-height:10rem;display:grid;place-items:center;background:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 14px,transparent 14px 28px),var(--night);color:rgba(244,242,236,.6);font-size:.9rem}
+.ph::after{content:'Photo à venir'}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+/* accueil */
+.hero{padding:clamp(2rem,6vw,5rem) clamp(1rem,4vw,3rem) 2rem}
+.lead{font-size:clamp(1.2rem,2.5vw,1.6rem);margin:1.5rem 0 0;max-width:40ch}
+.panels{display:flex;height:min(68vh,38rem);margin:2rem 0;border-block:1px solid var(--line)}
+.panel{position:relative;flex:1;margin:0;overflow:hidden;border-right:1px solid var(--line);transition:flex .55s cubic-bezier(.2,.7,.2,1)}
+.panel:last-child{border-right:0}
+.panel:hover,.panel:focus{flex:3}
+.panel figcaption{position:absolute;left:0;bottom:0;padding:.6rem 1rem;background:var(--rose);color:var(--night);display:flex;flex-direction:column;line-height:1.25}
+.panel figcaption span{font-size:.9rem}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:2rem 4rem;padding:3rem clamp(1rem,4vw,3rem) 5rem}
+.about h2{margin:0}
+.about .cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem}
+
+/* concerts */
+.shows{list-style:none;margin:0 0 4rem;padding:0}
+.show{display:grid;grid-template-columns:11rem 1fr auto;gap:.5rem 2rem;align-items:baseline;padding:1.25rem 0;border-top:1px solid var(--line)}
+.show:last-child{border-bottom:1px solid var(--line)}
+.show time{font:800 1.9rem var(--display);font-stretch:80%}
+.show .where{font-size:1.25rem}
+.show .where small{display:block;font-size:1rem;opacity:.75}
+.past .show{opacity:.6}
+.past .show time{font-size:1.3rem}
+.empty{border:2px dashed var(--line);padding:1.5rem;margin-bottom:4rem}
+h3{font-stretch:80%;font-size:1.6rem;margin-bottom:1rem}
+
+/* presse */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1rem;margin-bottom:4rem}
+.grid figure{margin:0;aspect-ratio:4/3;position:relative;overflow:hidden}
+.grid figcaption{position:absolute;right:0;bottom:0;background:var(--night);padding:.25rem .75rem;font-size:.85rem}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem}
+.doc{display:block;padding:1.5rem;border:2px solid var(--edelweiss);text-decoration:none;border-radius:1.25rem}
+.doc:hover{background:var(--edelweiss);color:var(--night)}
+.doc strong{display:block;font:800 1.6rem var(--display);font-stretch:80%}
+.doc span{font-size:.95rem}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:3rem}
+form{display:grid;gap:1.25rem}
+label{display:grid;gap:.4rem;font-weight:600}
+input,textarea{font:inherit;color:var(--night);background:var(--edelweiss);border:2px solid transparent;border-radius:.75rem;padding:.75rem 1rem}
+input:focus,textarea:focus{outline:3px solid var(--rose);outline-offset:2px}
+textarea{min-height:10rem;resize:vertical}
+.hp{position:absolute;left:-9999px}
+.status{margin:0;padding:1rem;border-left:4px solid var(--rose);background:var(--night)}
+
+@media (max-width:760px){
+  .panels{flex-direction:column;height:auto}
+  .panel{flex:none;height:9rem;border-right:0;border-bottom:1px solid var(--line)}
+  .about,.contact{grid-template-columns:1fr}
+  .show{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
