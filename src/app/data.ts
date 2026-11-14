@@ -12,10 +12,10 @@ export const ABOUT = [
 
 // photo : chemin dans public/images, par ex. '/images/prenom.jpg'. Laissez vide tant que vous n'avez pas la photo.
 export const MEMBERS: { name: string; role: string; photo?: string }[] = [
-  { name: 'Prénom Nom', role: 'Instrument' },
-  { name: 'Prénom Nom', role: 'Instrument' },
-  { name: 'Prénom Nom', role: 'Instrument' },
-  { name: 'Prénom Nom', role: 'Instrument' },
+  { name: 'Mattéo Bonvin', role: 'Trombone' },
+  { name: 'Léo Pham', role: 'Guitare' },
+  { name: 'Wyclif Ruhumuliza', role: 'Batterie' },
+  { name: 'Jean Démurger', role: 'Basson' },
 ];
 
 // date au format AAAA-MM-JJ. Les concerts passés basculent seuls dans « Passés ».
