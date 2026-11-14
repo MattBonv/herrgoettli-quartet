@@ -1,7 +1,7 @@
 export const EMAIL = 'booking@herrgoettli-quartet.ch';
 
 // Créez un formulaire sur formspree.io avec l'adresse booking@..., puis collez ici son URL.
-export const FORM_ENDPOINT = 'https://formspree.io/f/VOTRE_ID';
+export const FORM_ENDPOINT = 'https://formspree.io/f/xwlovzzp';
 
 export const TAGLINE = 'Fais danser toute la Suisse sans modération';
 
