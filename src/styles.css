@@ -87,3 +87,9 @@ textarea{min-height:10rem;resize:vertical}
   .show{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.logo-hero{width:min(100%,18rem);height:auto}
+@media (min-width:760px){
+  .logo-hero{width:min(100%,70rem)}
+}
+.logo-bar{height:2.25rem;width:auto}

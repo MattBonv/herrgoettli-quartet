@@ -24,10 +24,10 @@ export const CONCERTS: { date: string; city: string; venue: string; url?: string
 ];
 
 export const PRESS_PHOTOS: { src?: string; alt: string; credit: string }[] = [
-  { alt: 'Le quatuor sur scène', credit: 'Photo : à renseigner' },
+  { alt: 'Le quartet sur scène', credit: 'Photo : à renseigner' },
   { alt: 'Portrait de groupe', credit: 'Photo : à renseigner' },
   { alt: 'Détail instruments', credit: 'Photo : à renseigner' },
-  { alt: 'Le quatuor en répétition', credit: 'Photo : à renseigner' },
+  { alt: 'Le quartet en répétition', credit: 'Photo : à renseigner' },
 ];
 
 export const DOCS = [

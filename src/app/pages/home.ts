@@ -6,7 +6,12 @@ import { ABOUT, MEMBERS, TAGLINE } from '../data';
   imports: [RouterLink],
   template: `
     <section class="hero">
-      <h1>Herrgöttli Quartet</h1>
+      <h1>
+        <picture>
+          <source media="(min-width: 760px)" srcset="/images/logos/logo_horizontal.svg" />
+          <img class="logo-hero" src="/images/logos/logo_white.svg" alt="Herrgöttli Quartet" />
+        </picture>
+      </h1>
       <p class="lead">{{ tagline }}</p>
     </section>
 
