@@ -3,11 +3,11 @@ export const EMAIL = 'booking@herrgoettli-quartet.ch';
 // Créez un formulaire sur formspree.io avec l'adresse booking@..., puis collez ici son URL.
 export const FORM_ENDPOINT = 'https://formspree.io/f/xwlovzzp';
 
-export const TAGLINE = 'Fais danser toute la Suisse sans modération';
+export const TAGLINE = 'Fait danser toute la Suisse sans modération';
 
 export const ABOUT = [
-  'Remplacez ce texte par la présentation du groupe : qui vous êtes, comment le quatuor est né, ce que vous jouez.',
-  'Un second paragraphe pour ce qui vous distingue : le répertoire, la scène, un souvenir de concert.',
+  'Groupe de Jazz Festif ayant comme mission de réunir toute la Suisse sur le dance-floor',
+  'À mi-chemin entre un concert et un cours de Cross-Fit, veuillez vous échauffer avant de venir nous voir.',
 ];
 
 // photo : chemin dans public/images, par ex. '/images/prenom.jpg'. Laissez vide tant que vous n'avez pas la photo.
