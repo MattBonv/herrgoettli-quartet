@@ -133,3 +133,4 @@ textarea{min-height:10rem;resize:vertical}
 .menu-list .opt.on{background:var(--rose)}
 
 @media (prefers-reduced-motion:reduce){.menu{animation:none}}
+@media (max-width:760px){.bar .langmenu{display:none}}
