@@ -16,7 +16,14 @@ const fr = {
       'À mi-chemin entre un concert et un cours de Cross-Fit, veuillez vous échauffer avant de venir nous voir.',
     ],
     seeConcerts: 'Voir les concerts',
-    contactUs: 'Nous contacter',
+        contactUs: 'Nous contacter',
+    word: {
+      respell: 'hèr-gueutt-li',
+      senses: [
+        'Mot suisse-allemand désignant une petite bière de 2dl.',
+        'Quartet de jazz festif qui fait danser toute la Suisse. À consommer sans modération.',
+      ],
+    },
   },
   concerts: {
     upcoming: 'À venir',
@@ -57,6 +64,13 @@ export const TEXT: Record<Lang, typeof fr> = {
       ],
       seeConcerts: 'Konzerte ansehen',
       contactUs: 'Kontakt aufnehmen',
+      word: {
+        respell: 'här-gött-li',
+        senses: [
+          'Schweizerdeutsches Wort für ein kleines Bier von 2 dl.',
+          'Festliche Jazzband, die die ganze Schweiz zum Tanzen bringt. Ohne Mass zu geniessen.',
+        ],
+      },
     },
     concerts: {
       upcoming: 'Kommende',
@@ -93,6 +107,13 @@ export const TEXT: Record<Lang, typeof fr> = {
       ],
       seeConcerts: 'See the concerts',
       contactUs: 'Get in touch',
+      word: {
+        respell: 'hair-gurt-lee',
+        senses: [
+          'Swiss German word for a small 2 dl beer.',
+          'A festive jazz quartet that gets all of Switzerland dancing. Best enjoyed without moderation.',
+        ],
+      },
     },
     concerts: {
       upcoming: 'Upcoming',
@@ -156,3 +177,8 @@ export const DOCS: { title: L; file: string; note: L }[] = [
     note: { fr: 'Plan de scène et besoins techniques (PDF)', de: 'Bühnenplan und technische Anforderungen (PDF)', en: 'Stage plan and technical needs (PDF)' },
   },
 ];
+
+export const WORD = {
+  term: 'Herrgöttli',
+  ipa: 'ˈhɛrˌɡœtːli',
+};

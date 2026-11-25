@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { MEMBERS } from '../data';
+import { MEMBERS, WORD } from '../data';
 import { I18n } from '../i18n';
 
 @Component({
   imports: [RouterLink],
   template: `
     @let c = i18n.t();
+    @let w = c.home.word;
     <section class="hero">
       <h1>
         <picture>
@@ -15,6 +16,15 @@ import { I18n } from '../i18n';
         </picture>
       </h1>
       <p class="lead">{{ c.home.tagline }}</p>
+
+      <aside class="entry" [attr.aria-label]="word.term">
+        <p class="entry-head">
+          <strong class="term" lang="gsw">{{ word.term }}</strong>
+          <span class="ipa">[{{ word.ipa }}]</span>
+          <span class="respell">≈ {{ w.respell }}</span>
+        </p>
+        <ol>@for (s of w.senses; track $index) { <li>{{ s }}</li> }</ol>
+      </aside>
     </section>
 
     <section class="panels" [attr.aria-label]="c.home.panels">
@@ -41,4 +51,5 @@ import { I18n } from '../i18n';
 export class Home {
   i18n = inject(I18n);
   members = MEMBERS;
+  word = WORD;
 }
